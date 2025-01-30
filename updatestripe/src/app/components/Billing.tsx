@@ -356,7 +356,7 @@ export default function Billing() {
                   className="mr-2"
                 />
                 <label htmlFor="card" className="text-sm">
-                  Card / Stripe (Demo)
+                   Stripe 
                 </label>
               </div>
             </div>
