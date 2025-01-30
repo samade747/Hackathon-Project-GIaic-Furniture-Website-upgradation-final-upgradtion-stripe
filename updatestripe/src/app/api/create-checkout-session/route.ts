@@ -48,6 +48,7 @@ export async function POST(req: Request) {
 
     // 4) Return session URL
     return NextResponse.json({ url: session.url });
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     console.error("Stripe Checkout Error:", error);
     return NextResponse.json({ error: error.message }, { status: 500 });
