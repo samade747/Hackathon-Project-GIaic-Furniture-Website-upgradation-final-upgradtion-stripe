@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
             {/* Authentication Buttons */}
             <SignedOut>
               <SignInButton mode="modal">
-                <button className="px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 transition">
+                <button className="px-4 py-2 bg-black text-white rounded hover:bg-indigo-600 transition">
                   Sign In
                 </button>
               </SignInButton>

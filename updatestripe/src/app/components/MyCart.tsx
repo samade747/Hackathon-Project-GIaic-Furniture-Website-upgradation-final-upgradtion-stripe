@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import { useCart } from "../../context/CartContext";
+import Link from "next/link";
 
 
 const MyCart: React.FC = () => {
@@ -82,9 +83,12 @@ const MyCart: React.FC = () => {
               <span>Total:</span>
               <span>Rs. {total.toLocaleString()}</span>
             </div>
-            <button className="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition">
-              Check Out
-            </button>
+            <Link href="/billing" className="inline-block w-full">
+              <button className="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition">
+               Check Out
+               </button>
+              </Link>
+
           </div>
         </div>
       )}
