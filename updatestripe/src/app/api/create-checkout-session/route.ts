@@ -25,6 +25,7 @@ export async function POST(req: Request) {
     }
 
     // 2) Build Stripe line items
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const lineItems = items.map((item: any) => ({
       price_data: {
         currency: "usd", // or "lkr" or whatever currency you use
